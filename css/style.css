@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/* ####################################################################################################  */
+/* buttons */
+.buttons{
+    padding: 0 15%;
+    
+}
+/* download-button */
+.download-button {
+    margin: 3% 4% 3% 0;
+}
+#button1 {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #141414;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+    top: 0;
+}
+
+
+/* ####################################################################################################  */
+/* start-page */
+.start-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-height: 100%;
+}
+
+/* containers */
+.container-fluid {
+    padding: 7% 15%;
+}
+
+
+/* ####################################################################################################  */
+/* navigation bar */
+.menu {
+    padding: 0 0 4rem;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* ####################################################################################################  */
+/* title section */
+#title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+
+
+/* ####################################################################################################  */
+/* headings */
+.bali_heading {
+    padding-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.big_heading {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 800;
+    font-size: 9vw;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.section-heading {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+}
+
+.title-heading {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 1px 2px #0000001a;
+    padding: 2% 0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 1px 2px #0000001a;
+}
+
+/* ##########################################################################################*/
+/* About */
+#content {
+    text-align: left;
+    padding: 7% 15%;
+    background-color: #e7e7e7;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.content-image {
+    width: 80%;
+    border-radius: 3%;
+    left: 25%;
+}
+
+
+
+/* ##########################################################################################*/
+/* #tetimonials */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: flex;
+}
+#testimonials {
+    color: #000000;
+}
+
+.testimonial-text {
+    font-weight: bold;
+    color: #fff;
+    padding: 2% 15%;
+}
+
+.img1 {
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)), url("../image/beach.jpg");
+    background-size: cover;
+}
+
+.img2 {
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)), url("../image/mountain.jpg");
+    background-size: cover;
+}
+
+.img3 {
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)), url("../image/sunset.jpg");
+    background-size: cover;
+}
+
+
+/* ##########################################################################################*/
+/* tours section */
+.tours {
+    background-color: #e7e7e7;
+    position: relative;
+    z-index: 1;
+    padding: 7% 15%;
+
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    width: 280px;
+    transform: scale(300px);
+    background-color: #c9c9c9;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 6px #c9c9c9;
+
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.btn-dark {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #eee;
+}
+
+
+/* ####################################################################################################  */
+/* events */
+.events {
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url("../image/party.jpg");
+    background-size: cover;
+}
+
+#content2{
+    color: #fff;
+    text-align: left;
+    padding: 7% 15%;
+    align-items:  center;
+}
+
+.content-text {
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.starship h2 {
+    line-height: 48px;
+    color: #eee;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vmin;
+}
+
+/* ##########################################################################################*/
+/* Destination */
+.destination{
+    background-color: #e7e7e7;
+    color: #000000;
+    /* margin: 7% 15%; */
+}
+.desb{
+    padding-left: 10;
+}
+#a{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;   
+    text-transform: uppercase;
+    font-size:large;
+
+}
+.container{
+    padding: 7% 15%;
+
+}
+/* ##########################################################################################*/
+/* footer */
+.foot{
+    padding: 5% 5% 0 5%;
+}
+
+@media (max-width:999px) {
+    body {
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    .bali_heading{
+        height: 70vh;
+    }
+    .res_font{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text_al{
+        text-align: center;
+    }
+}
